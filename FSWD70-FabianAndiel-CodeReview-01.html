@@ -9,6 +9,7 @@
 	
 <!-- IMPORT OF THE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 
 
 	<title> My first website</title>
@@ -34,6 +35,8 @@
 
 		#table-cell1 {
 			vertical-align: middle;
+			font-weight:bold;
+			font-size:1.5em;
 		}
 
 
@@ -46,7 +49,7 @@
 		       margin: 0; 
 		       padding: 0; 
 		       background-color: brown;
-		       position: fixed;
+		       position: absolute;
 		       width: 100%;
 		     }
 		    
@@ -73,11 +76,13 @@
 			#secondBar {
 				height:2vw; /*Question: why doesn`t height in % doesn`t work here*/ 
 				width:100%;
-				background-color: #E6E6E6;
+				background-color: silver;
 				color: white;	
+				font-size:1.3em;
 										} 
 /*ENDING LAYOUT FOR HERO IMAGE PART*/
 
+/*LAYOUT FOR MAIN*/
 
 			.flex-container {
 				display: flex;
@@ -89,22 +94,34 @@
 			.flex-container img {
 				width:  405px;
 				height: 270px;
+
+			}
+
+			.tested {
+				color:white; /*Question: Would love to do this more elegant*/
+			}
+
+			figcaption {
+				font-family: 'Noto Sans JP', sans-serif;
 			}
 			
-/*LAYOUT FOR MAIN*/
-			
-
-
-
-
 /*ENDING LAYOUT FOR MAIN*/
 
+			#thirdBar {
+				height:1vw; /*Question: why doesn`t height in % doesn`t work here*/ 
+				width:100%;
+				background-color: darkgrey;
+				margin-top: 9%;
+				margin-bottom:3%;
+			/*	color: white;*/
+				}	
 
 
-
+/*LAYOUT FOR FOOTER*/
 			footer {
 				text-align:center;
 			}
+/*ENDING LAYOUT FOR FOOTER*/
 
 
 
@@ -149,43 +166,36 @@
 		<main>
 
 			<div class="flex-container">
+				
+				<figure>
 				<img src="Phone.png">
+				<figcaption>Local Marketing plattform Uberall raises further $25 Million <br> and aquires competitor Navads</figcaption>
+				</figure>
+
+				<figure>
 				<img src="Taxify-Scooters.jpg">
+				<figcaption>Taxify is entering the e-scooter game <br> <span class="tested"> Tested </span> </figcaption>
+				</figure>
+
 			</div>
 
 			<div class="flex-container">
+
+				<figure>
 				<img src="Devices.jpg">
+				<figcaption>Livongo Health expands under new offering with Abbott Labs <br><span class="tested"> Tested </span> </figcaption>
+				</figure>
+
+				<figure>
 				<img src="Debit_card_ATM.jpg">
+				<figcaption>European Banking app Moneses scores $60M Series B <br> led by Kinnevik</figcaption>
+				</figure>
 			</div>
-			
-
-
-
-
-
-
-
 		</main>
-
-
-	
-
-
-
-
-
-	<main>
-		
-
-
-
-
-
+		<div id="thirdBar"> <!-- Test  --></div>
 
 	
-	</main>
 	<footer>
-		
 			<img src="codefactory-vienna-logo.png"><br>
 			<p> Fabian Andiel - CodeFactory 2019<p> 
 	</footer>
