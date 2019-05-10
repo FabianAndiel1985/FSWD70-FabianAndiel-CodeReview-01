@@ -15,12 +15,31 @@
 	
 
 	<style>
-		
+
+/*TABLE LAYOUT FOR HEADER PIC AND FOOTER*/
+
+		.table { 
+   				display: table;
+   				border-spacing: 0.5em;
+				}
+
+		.table-row {
+			display: table-row; 
+		}
+
+
+		.table-cell {
+			display: table-cell; 
+		}
+
+		#table-cell1 {
+			vertical-align: middle;
+		}
+
+
+/*ENDING TABLE LAYOUT FOR HEADER PIC AND FOOTER*/
 		
 
-		header {
-			float: left;
-		}
 
 		#hero-image > h1 {
 			font-family: 'Gloria Hallelujah','Dancing Script', cursive;
@@ -34,15 +53,38 @@
 
 
 
+
+
+
+
+
+
 	</style>
 </head>
 <body>
 
 	<header>
-		<img src="codefactory-vienna-logo.png" id="header-img">
-		<span>
-			Fabian Andiel - I´m a future full stack Web Developer
-		</span>	
+		
+		
+		<div class="table">
+			<div class="table-row">
+			   <div clas="table-cell">
+			    	<img src="codefactory-vienna-logo.png" id="header-img"> 
+			   </div>
+			   <div class="table-cell"  id="table-cell1">
+			   			
+						Fabian Andiel - I´m a future full stack Web Developer
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
 	</header>
 
 	<br>
